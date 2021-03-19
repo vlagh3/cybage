@@ -1,0 +1,17 @@
+.terminal {
+    --color: var(--foreground);
+    --background: var(--background);
+    --animation: terminal-bar;
+    --size: 1.1;
+    --error-color: var(--accent);
+}
+
+.cmd a[href], .terminal .terminal-output>:not(.raw) a[href] {
+    color: var(--green);
+}
+
+
+.cmd:focus-within .prompt * {
+    color: red;
+}
+
