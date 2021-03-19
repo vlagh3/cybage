@@ -71,13 +71,10 @@ class Config {
 
 
 
-let cfg;
-
+// Initial config setup
+let cfg = new Config()
 $(document).ready(function () {
 
-
-  // Initial config setup
-  cfg = new Config()
   // It couldn't get more retarded than this
   let names = document.getElementsByClassName("name")
   names[0].innerHTML = cfg.name
