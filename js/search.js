@@ -1,13 +1,3 @@
-
-/*
- *  TODO
- *  
- *  [] Handle different search engines (e.g :yt, :g, :arch, :gh)
- *  [] Let the user dynamically add search engines through the terminal
- *
- */
-
-
 $(document).ready(function () {
 
     // Retrieve search input ref
@@ -38,11 +28,31 @@ $(document).ready(function () {
         }
     })
 
-    // After form is submitted, clear out the input
+    // After form is submitted, handle
+    // search and clear out the input
     $('#search').submit(function(e) {
         e.preventDefault();         // don't submit multiple times
-        this.submit();              // use the native submit method of the form element
+
+        // Detect if user wants a search engine 
+        // (i know this is frustrating to watch)
+        let uInput = search_input.value.trim()
+        if (uInput[0] == ":") {
+            let engine = uInput.split(" ")[0]
+            let query  = uInput.substr(uInput.indexOf(' ')+1); 
+
+            if (engine in cfg.search_engines) {
+                window.open(cfg.search_engines[engine] + query)
+            }
+
+        }
+        // If no search engine used, just duck that
+        else {
+            window.open("https://duckduckgo.com/?q=" + uInput)
+        }
+
         search_input.value = ""     // blank the input
+        //this.submit();              // use the native submit method of the form element
     });
 
 });
+
