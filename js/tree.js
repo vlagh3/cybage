@@ -18,7 +18,6 @@ function genTree(linksObj=cfg.structure) {
             </li>`
 
     });
-
     list.innerHTML = full_tree;
     
 }

@@ -12,11 +12,18 @@ $(document).ready(function () {
             // Make form visible and focus on it
             if (!lastShift) {
                 search_input.parentElement.classList.add("visible");
-                $(".search").fadeIn("fast", 
-                    function() {
-                        $("#search_input").focus();
+                $(".search").fadeIn("fast", function() {
+
+                    // I spent to much time trying to figure out
+                    // why this doesn't work, fuck it
+
+                    // Remove focus from any focused element
+                    if (document.activeElement) {
+                        document.activeElement.blur();
                     }
-                );
+                    $("#search_input").focus();
+
+                });
                 lastShift = true
             }
 
@@ -27,6 +34,7 @@ $(document).ready(function () {
             }
         }
     })
+
 
     // After form is submitted, handle
     // search and clear out the input
