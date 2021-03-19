@@ -1,0 +1,13 @@
+.prompt {
+    font-family: var(--font);
+    color: var(--green);
+    font-weight: bold;
+}
+
+.prompt~.prompt {
+    padding: 1.5rem 0 0.3125rem;
+}
+
+.prompt span {
+    color: var(--foreground);
+}
