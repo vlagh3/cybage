@@ -43,6 +43,9 @@ $(document).ready(function () {
             if (engine in cfg.search_engines) {
                 window.open(cfg.search_engines[engine] + query)
             }
+            else {
+                alert(`${engine} search engine doesn't exist`)
+            }
 
         }
         // If no search engine used, just duck that
