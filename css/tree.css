@@ -11,3 +11,56 @@
 .prompt span {
     color: var(--foreground);
 }
+
+.links {
+    padding: 5px;
+}
+
+.links > ul {
+    margin: 0;
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.links li {
+    position: relative;
+}
+
+.links li.hideChildren > ul {
+    display: none;
+}
+
+.links li::before, .links li::after {
+    content: "";
+    position: absolute;
+    left: -0.75rem;
+}
+
+.links li::before {
+    border-top: var(--branch);
+    top: 0.75rem;
+    width: 0.5rem;
+}
+
+.links li::after {
+    border-left: var(--branch);
+    height: 100%;
+    top: 0.25rem;
+}
+
+.links li:last-child::after {
+    height: 0.5rem;
+}
+
+.links a {
+    font-family: var(--font);
+    font-size: 1rem;
+    color: var(--foreground);
+    text-decoration: none;
+    outline: none;
+}
+
+.links a:hover,
+.links a:focus {
+    color: var(--blue);
+}
