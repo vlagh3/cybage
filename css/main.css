@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "ProggyCleanTTSZ Nerd Font";
+    src: url("../fonts/ProggyCleanTTSZ Nerd Font Complete Mono.ttf");
+}
+
+:root {
+    --font: "ProggyCleanTTSZ Nerd Font";
+    --background: #0f0a14;
+    --black: #1a1e31;
+    --foreground: #b2436e;
+    --accent: #ce4b6d;
+    --highlight: #116666;
+    --green: #2a5b6f;
+    --blue: #3e3a4d;
+    --red: #9a2d44;
+    --magenta: #d64eae;
+    --branch: 1px solid #2a5b6f;
+}
+
+html {
+    font-size: 18px;
+    overflow: hidden;
+}
+
+body {
+    font-family: var(--font);
+    background-color: var(--background);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--foreground)
+}
+
+
+p {
+    margin: 0;
+}
+
+h4 {
+    color: var(--red);
+    font-weight: bold;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    color: var(--red);
+    text-align: left;
+}
+
+.dotted {
+    border: 1px dotted var(--red);
+    padding: 10px;
+    height: 700px;
+}
