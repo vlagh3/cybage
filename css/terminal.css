@@ -6,10 +6,13 @@
     --error-color: var(--accent);
 }
 
+.terminal {
+    height: 500px;
+}
+
 .cmd a[href], .terminal .terminal-output>:not(.raw) a[href] {
     color: var(--green);
 }
-
 
 .cmd:focus-within .prompt * {
     color: red;

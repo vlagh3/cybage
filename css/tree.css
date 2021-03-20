@@ -4,6 +4,10 @@
     font-weight: bold;
 }
 
+.tree {
+    height: 800px;
+}
+
 .prompt~.prompt {
     padding: 1.5rem 0 0.3125rem;
 }

@@ -10,7 +10,7 @@ function genTree(linksObj=cfg.structure) {
                 <ul>
                 ${linksObj[categ_name].map(([lName, url]) => `
                     <li>
-                        <a href="${url}">${lName}</a>
+                        <a href="${url}" target="_blank">${lName}</a>
                     </li>`
                 ).join("") }
 
