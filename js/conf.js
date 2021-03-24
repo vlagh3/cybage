@@ -36,20 +36,39 @@ class Config {
         this.hostname   = this.hostname   || "cbox";
         this.search_engines = this.search_engines || {
             ":yt": "https://www.youtube.com/results?search_query=",
-            ":g": "https://www.google.com/search?q="
+            ":g": "https://www.google.com/search?q=",
+            ":gh": "https://github.com/search?q=",
+            ":arch": "https://aur.archlinux.org/packages/?O=0&K="
         };
         this.structure  = this.structure  || {
-                "resources": [
-                    ["bitly", "https://bitly.com/"],
-                    ["github", "https://github.com/"],
-                    ["pexels", "https://www.pexels.com/"],
-                    ["protonmail", "https://mail.protonmail.com/inbox"]
-                ],
-                "social": [
-                    ["4chan", "https://4chan.org"],
-                    ["reddit", "https://reddit.com"],
-                    ["youtube", "https://youtube.com"]
-                ]
+            "social": [
+              ["reddit", "https://reddit.com/login"],
+              ["gitlab", "https://gitlab.com/login"],
+              ["medium", "https://medium.com/m/signin?operation=login&redirect=https%3A%2F%2Fmedium.com%2F&source=--------------------------lo_home_nav-----------"],
+              ["twitter", "https://twitter.com/login"],
+              ["stackoverflow", "https://stackoverflow.com/"]
+            ],
+            "finance": [
+              ["binance", "https://accounts.binance.com/en/login"],
+              ["tradingview", "https://www.tradingview.com/"],
+              ["coinmarketcap","https://coinmarketcap.com/"],
+              ["uniswap", "https://uniswap.org/"]
+            ],
+            "security": [
+              ["hackerone", "https://hackerone.com/users/sign_in"],
+              ["intigrity", "https://login.intigriti.com/Account/Login"],
+              ["hackthebox", "https://hackthebox.eu/"],
+              ["pulsedive", "https://pulsedive.com/"]
+            ],
+            "content": [
+              ["raindrop", "https://app.raindrop.io/account/login"],
+              ["hackernoon", "https://hackernoon.com/"]
+            ],
+            "personal": [
+              ["vultr", "https://my.vultr.com/"],
+              ["amazon", "https://www.amazon.com/"],
+              ["epik", "https://www.epik.com/"]
+            ]
         };
     }
 }
