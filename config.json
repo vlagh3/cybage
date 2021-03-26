@@ -5,7 +5,8 @@
     ":yt": "https://www.youtube.com/results?search_query=",
     ":g": "https://www.google.com/search?q=",
     ":gh": "https://github.com/search?q=",
-    ":arch": "https://aur.archlinux.org/packages/?O=0&K="
+    ":arch": "https://aur.archlinux.org/packages/?O=0&K=",
+    ":w": "https://wiby.me/?q="
   },
   "structure": {
     "social": [
@@ -34,6 +35,7 @@
     "personal": [
       ["vultr", "https://my.vultr.com/"],
       ["amazon", "https://www.amazon.com/"],
+      ["protonmail", "https://www.protonmail.com/login"],
       ["epik", "https://www.epik.com/"]
     ]
   }
